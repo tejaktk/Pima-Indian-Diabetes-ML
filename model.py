@@ -23,7 +23,7 @@ from sklearn.tree import DecisionTreeClassifier
 classifier1= DecisionTreeClassifier(criterion="gini",random_state=123)
 classifier1.fit(x_train,y_train)
 
-y_pred1 = classifier2.predict(x_test)
+y_pred1 = classifier1.predict(x_test)
 
 from sklearn.metrics import confusion_matrix, accuracy_score
 cm1 = confusion_matrix(y_test,y_pred1)
